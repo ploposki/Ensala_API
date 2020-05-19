@@ -17,6 +17,7 @@ public class ApplicationConfig extends Application {
         resources.add(br.edu.ensala.restful.CrossOrigin.class);
         resources.add(br.edu.ensala.restful.RegisterAPI.class);
         resources.add(br.edu.ensala.restful.RoomAPI.class);
+        resources.add(br.edu.ensala.restful.SearchAPI.class);
         resources.add(br.edu.ensala.restful.UserAPI.class);
     }
     

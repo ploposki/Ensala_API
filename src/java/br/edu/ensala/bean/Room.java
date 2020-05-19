@@ -3,14 +3,16 @@ package br.edu.ensala.bean;
 public class Room {
     
     private String reserve_date;
+    private String canceled_at;
     private int id_room;
     private int id_user;
 
     public Room() {
     }
 
-    public Room(String reserve_date, int id_room, int id_user) {
+    public Room(String reserve_date, String canceled_at, int id_room, int id_user) {
         this.reserve_date = reserve_date;
+        this.canceled_at = canceled_at;
         this.id_room = id_room;
         this.id_user = id_user;
     }
@@ -21,6 +23,14 @@ public class Room {
 
     public void setReserve_date(String reserve_date) {
         this.reserve_date = reserve_date;
+    }
+
+    public String getCanceled_at() {
+        return canceled_at;
+    }
+
+    public void setCanceled_at(String canceled_at) {
+        this.canceled_at = canceled_at;
     }
 
     public int getId_room() {
