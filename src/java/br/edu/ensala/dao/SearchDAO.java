@@ -25,7 +25,7 @@ public class SearchDAO {
         
         try {
             
-            stmt = conn.prepareStatement("select * from reserve order by id_reserve desc limit " 
+            stmt = conn.prepareStatement("select * from reserve where canceled_at is null order by id_reserve desc limit " 
                     + searchRequest.getSearch().getLimit());
 
             rs = stmt.executeQuery();
@@ -35,6 +35,7 @@ public class SearchDAO {
             while(rs.next()){
 
                 String[] reserveArray = {rs.getString("id_reserve"),
+                                         rs.getString("id_user"),
                                          rs.getString("id_room"),
                                          rs.getString("reserve_date"),
                                          rs.getString("created_at"),

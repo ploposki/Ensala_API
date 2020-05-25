@@ -3,6 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/home/acp/Documents/Projects/Ensala_API/src/java/br/edu/ensala/bean/Room.java</file>
+            <file>file:/home/acp/Documents/Projects/Ensala_API/src/java/br/edu/ensala/dao/RegisterDAO.java</file>
+            <file>file:/home/acp/Documents/Projects/Ensala_API/src/java/br/edu/ensala/dao/SearchDAO.java</file>
+            <file>file:/home/acp/Documents/Projects/Ensala_API/src/java/br/edu/ensala/dao/RoomDAO.java</file>
             <file>file:/home/acp/Documents/Projects/Ensala_API/src/java/br/edu/ensala/restful/CrossOrigin.java</file>
         </group>
     </open-files>
