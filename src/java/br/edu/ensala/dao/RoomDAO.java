@@ -84,7 +84,7 @@ public class RoomDAO {
         
         try {
             
-            stmt = conn.prepareStatement("insert into reserve (id_user, id_room, reserve_date, created_at) VALUES (?,?,?,now())");
+            stmt = conn.prepareStatement("insert into reserve (id_user, id_room, reserve_date, created_at) values (?,?,?,now())");
             
             stmt.setInt(1,id_user);
             stmt.setInt(2,id_room);

@@ -84,7 +84,7 @@ public class RegisterDAO {
         
         try {
             
-            stmt = conn.prepareStatement("insert into user (name, password, admin_access) VALUES (?,?,?)");
+            stmt = conn.prepareStatement("insert into user (name, password, admin_access) values (?,?,?)");
             
             stmt.setString(1,name);
             stmt.setString(2,password);
