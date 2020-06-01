@@ -14,6 +14,7 @@ public class ApplicationConfig extends Application {
     }
 
     private void addRestResourceClasses(Set<Class<?>> resources) {
+        resources.add(br.edu.ensala.restful.CancelAPI.class);
         resources.add(br.edu.ensala.restful.CrossOrigin.class);
         resources.add(br.edu.ensala.restful.RegisterAPI.class);
         resources.add(br.edu.ensala.restful.RoomAPI.class);

@@ -25,7 +25,7 @@ public class SearchAPI {
     @POST
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
-    public Response login(String search) throws IOException {
+    public Response search(String search) throws IOException {
         
         SearchController searchController = new SearchController();
         SearchRequest searchRequest = Json.toObject(search, SearchRequest.class);

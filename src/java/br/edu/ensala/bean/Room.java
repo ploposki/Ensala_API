@@ -6,15 +6,17 @@ public class Room {
     private String canceled_at;
     private int id_room;
     private int id_user;
+    private int id_reserve;
 
     public Room() {
     }
 
-    public Room(String reserve_date, String canceled_at, int id_room, int id_user) {
+    public Room(String reserve_date, String canceled_at, int id_room, int id_user, int id_reserve) {
         this.reserve_date = reserve_date;
         this.canceled_at = canceled_at;
         this.id_room = id_room;
         this.id_user = id_user;
+        this.id_reserve = id_reserve;
     }
 
     public String getReserve_date() {
@@ -47,6 +49,14 @@ public class Room {
 
     public void setId_user(int id_user) {
         this.id_user = id_user;
+    }
+
+    public int getId_reserve() {
+        return id_reserve;
+    }
+
+    public void setId_reserve(int id_reserve) {
+        this.id_reserve = id_reserve;
     }
 
 }

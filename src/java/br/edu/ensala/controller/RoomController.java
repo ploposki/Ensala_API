@@ -6,7 +6,7 @@ import br.edu.ensala.response.RoomResponse;
 
 public class RoomController {
     
-    public RoomResponse login(RoomRequest roomRequest){
+    public RoomResponse room(RoomRequest roomRequest){
         
         RoomResponse roomResponse = new RoomResponse();
         

@@ -25,11 +25,11 @@ public class RoomAPI {
     @POST
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
-    public Response reserve(String room) throws IOException {
+    public Response room(String room) throws IOException {
         
         RoomController roomController = new RoomController();
         RoomRequest roomRequest = Json.toObject(room, RoomRequest.class);
-        RoomResponse roomResponse = roomController.login(roomRequest);
+        RoomResponse roomResponse = roomController.room(roomRequest);
         
         return Response.ok(Json.toJson(roomResponse)).build();
         
